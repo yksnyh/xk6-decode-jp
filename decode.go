@@ -43,6 +43,8 @@ func (*DecodeJp) Decode(buf goja.ArrayBuffer, encode string) string {
 			enc = japanese.ISO2022JP
 		case "iso-2022-jp":
 			enc = japanese.ISO2022JP
+		case "jis":
+			enc = japanese.ISO2022JP
 		default:
 			log.Panicf("Unknown encode %s", encode)
 		}
